@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar';
-import Admin from './pages/admin/admin';
+import Admin from './pages/admin/Admin';
 
 function App() {
   return (
