@@ -5,7 +5,7 @@ import Item from '../Item/Item'
  const RelatedProducts = () => {
 const[data_product,setData_Product]=useState([]);
   useEffect(()=>{
-    fetch('http://localhost:4000/relatedproducts')
+    fetch('https://ecommerce-mern-backend-rzqh.onrender.com/relatedproducts')
     .then((response)=>response.json())
     .then((data)=>setData_Product(data));
   },[])
