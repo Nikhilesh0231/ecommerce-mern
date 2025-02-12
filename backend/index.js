@@ -24,7 +24,7 @@ mongoose.connect(process.env.DB_URL).then(() => {
 //Image Storage Engine
 const storage1 = multer.diskStorage({
   destination: './upload/images',
-  limits: { fileSize: 10 * 1024 * 1024 },
+  limits: { fileSize: 300 * 1024 * 1024 },
   filename: (req, file, cb) => {
     return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`)
   }
